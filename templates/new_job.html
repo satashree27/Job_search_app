@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div class="card-wrapper">
+
+    <form action="{{url_for('job_posted')}}">
+        <label for="cname">Company name:</label><br>
+        <input type="text" id="cname" name="cname" placeholder="company name"><br>
+
+        <label for="c_url">Email address</label>
+        <input type="url" id="c_url" class="form-control" name="c_url" placeholder="Company URL"><br>
+
+        <label for="role">Job Role</label><br>
+        <input type="text" id="role" name="role"><br>
+
+        <label for="open_pos">Number of Open Position:</label><br>
+        <input type="text" id="open_pos" name="open_pos"><br>
+
+        <label for="deadline">Deadline</label><br>
+        <input type="date" id="deadline" name="deadline"><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</div>
+
+{% endblock %}

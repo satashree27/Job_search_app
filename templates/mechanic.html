@@ -1,0 +1,29 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+    <div class="card-wrapper">
+        
+        <div class="card">
+
+            <h3>Company: Diamond Car Garage</h3>
+            <p>Open Positions: 2 <br>
+                Qualifications: ITI Pass <br>
+                Necessary Documents: Valid identification card such as Aadhar/PAN Card <br>
+                Type: Hourly <br>
+                Location: New Town, Kolkata <br>
+                Deadline: 16/02/2021
+            </p>
+            <div class="mb-3">
+                <label for="formFile" class="form-label">Upload Short Resume</label>
+                <input class="form-control" type="file" id="formFile">
+            </div>
+            <div>
+                <a class="btn btn-primary" href="{{ url_for('applied')}}" role="button">Apply</a>
+            </div>
+
+        </div>
+
+    </div>
+
+{% endblock %}

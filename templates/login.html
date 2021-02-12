@@ -1,0 +1,41 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+    <div class="jumbotron text-center">
+
+        <h1 class="center">Login</h1>
+
+        <div>
+            <a href="{{url_for('login_emp')}}">Recruiter Account?</a>
+        </div>
+
+        <form action="{{url_for('login_check')}}" method=POST>
+
+            <div class="form-group">
+                <label for="login-username">Email address</label>
+                <input type="text" id="login-username" class="form-control" name="username" placeholder="Username">
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" class="form-control" name="password" placeholder="Password">
+                <br>
+                <button class="btn btn-primary" type="submit">
+                    Log In
+                </button>
+
+                <h6>
+                    {% if not test %}
+                        Please Enter the Correct Combination of your UserName and Password
+                    {% endif %}
+                </h6>
+            </div>
+
+            <div>
+                Didn't register yet ?
+                <a href="{{url_for('register')}}">Sign Up</a>
+            </div>
+
+        </form>
+
+    </div>
+
+{% endblock %}

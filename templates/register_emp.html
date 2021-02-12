@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+    <div class="jumbotron text-center">
+
+        <h1 class="center">Create a Recruiter Account</h1>
+
+        <form action="{{url_for('register_emp')}}" method=POST>
+
+            <div class="form-group">
+                <input type="text" class="form-control" name="username" placeholder="Name">
+                <br>
+                <input type="password" class="form-control" name="password" placeholder="Password">
+                <br>
+                <button class="btn btn-primary" type="submit">
+                    Register
+                </button>
+            </div>
+
+        </form>
+
+    </div>
+
+{% endblock %}
