@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'CMU Serif Roman';
+  src: URL('{{ url_for('static', filename = 'cmunrm.ttf') }}') format('truetype');
+}
+
+.scrollable-menu {
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+}
+
+.movie_display{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.thumbnail-class{
+    position: relative;
+    left: 10px;
+}
+
+#name{
+    font-weight: bold;
+
+}
+
+.font{
+	font-family: 'CMU Serif Roman';
+}
+
