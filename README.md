@@ -27,5 +27,8 @@ Recruiter:
 * Email: emp@abc.com
 * Password: hello
 
+#### Short demo as part of submission:
+https://youtu.be/tjfZKpLK0Qc
+
 #### Note:
 This being my first venture into webdevelopment, was more of a learning experience and the project is far from complete. I now look at this field with a newfound interest and will keep learning.
